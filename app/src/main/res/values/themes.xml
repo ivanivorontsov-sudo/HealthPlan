@@ -1,0 +1,16 @@
+<resources>
+    <style name="Theme.HealthPlan" parent="Theme.Material3.Light">
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorSecondary">@color/secondary</item>
+        <item name="android:statusBarColor">@color/primary</item>
+    </style>
+    <style name="Theme.HealthPlan.Main" parent="Theme.Material3.Light.NoActionBar">
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorSecondary">@color/secondary</item>
+        <item name="android:statusBarColor">@color/primary</item>
+    </style>
+    <style name="Theme.HealthPlan.Ring" parent="Theme.Material3.Dark.NoActionBar">
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:statusBarColor">#0B3D2E</item>
+    </style>
+</resources>

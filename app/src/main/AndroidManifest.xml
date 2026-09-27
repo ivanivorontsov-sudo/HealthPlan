@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Приложение полностью офлайн: разрешения INTERNET нет -->
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+    <uses-permission android:name="android.permission.SCHEDULE_EXACT_ALARM" android:maxSdkVersion="32" />
+    <uses-permission android:name="android.permission.USE_EXACT_ALARM" />
+    <uses-permission android:name="android.permission.USE_FULL_SCREEN_INTENT" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_MEDIA_PLAYBACK" />
+    <uses-permission android:name="android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-feature android:name="android.hardware.camera" android:required="false" />
+
+    <application
+        android:name=".App"
+        android:allowBackup="false"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:label="@string/app_name"
+        android:supportsRtl="false"
+        android:theme="@style/Theme.HealthPlan"
+        tools:targetApi="34">
+
+        <activity android:name=".MainActivity" android:exported="true" android:theme="@style/Theme.HealthPlan.Main"
+            android:launchMode="singleTask" android:windowSoftInputMode="adjustResize">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ui.ProfileActivity" android:label="Профиль" android:windowSoftInputMode="adjustResize" />
+        <activity android:name=".ui.ParamsActivity" android:label="Мои параметры" />
+        <activity android:name=".ui.SourcesActivity" android:label="Источники и оговорки" />
+        <activity android:name=".ui.PermissionsActivity" android:label="Разрешения" />
+        <activity android:name=".ui.EventEditActivity" android:label="Событие" android:windowSoftInputMode="adjustResize" />
+        <activity android:name=".ui.FoodPickerActivity" android:label="Выбор продукта" android:windowSoftInputMode="adjustResize" />
+        <activity android:name=".ui.MealBuilderActivity" android:label="Рассчитать граммы" />
+        <activity android:name=".ui.MyFoodsActivity" android:label="Мои блюда и продукты" />
+        <activity android:name=".ui.CustomFoodActivity" android:label="Свой продукт / блюдо" android:windowSoftInputMode="adjustResize" />
+        <activity android:name=".ui.OcrActivity" android:label="Распознать этикетку"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.SEND" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:mimeType="image/*" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".alarm.RingActivity" android:exported="false" android:theme="@style/Theme.HealthPlan.Ring"
+            android:showWhenLocked="true" android:turnScreenOn="true" android:launchMode="singleInstance"
+            android:excludeFromRecents="true" android:taskAffinity=".ring" />
+
+        <service android:name=".alarm.AlarmService" android:exported="false" android:foregroundServiceType="mediaPlayback" />
+
+        <receiver android:name=".alarm.AlarmReceiver" android:exported="false" />
+        <receiver android:name=".alarm.ActionReceiver" android:exported="false" />
+        <receiver android:name=".alarm.RescheduleReceiver" android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.intent.action.TIME_SET" />
+                <action android:name="android.intent.action.TIMEZONE_CHANGED" />
+                <action android:name="android.intent.action.MY_PACKAGE_REPLACED" />
+                <action android:name="android.app.action.SCHEDULE_EXACT_ALARM_PERMISSION_STATE_CHANGED" />
+            </intent-filter>
+        </receiver>
+
+        <provider android:name="androidx.core.content.FileProvider" android:authorities="${applicationId}.files"
+            android:exported="false" android:grantUriPermissions="true">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/file_paths" />
+        </provider>
+    </application>
+</manifest>

@@ -1,0 +1,361 @@
+fdc_id;name;category;kcal;protein;fat;carbs_available;fiber;tags;usda_description;fiber_reported
+170685;Гречка (крупа сухая);Крупы и гарниры;346;11.73;2.71;64.65;10.30;cb;Buckwheat groats, roasted, dry;1
+170686;Гречка варёная;Крупы и гарниры;92;3.38;0.62;17.24;2.70;cb;Buckwheat groats, roasted, cooked;1
+168877;Рис белый (сухой);Крупы и гарниры;365;7.13;0.66;78.65;1.30;c;Rice, white, long-grain, regular, raw, enriched;1
+169757;Рис белый варёный;Крупы и гарниры;130;2.69;0.28;27.77;0.40;c;Rice, white, long-grain, regular, unenriched, cooked without salt;1
+169704;Рис бурый варёный;Крупы и гарниры;123;2.74;0.97;23.98;1.60;c;Rice, brown, long-grain, cooked (Includes foods for USDA's Food Distribution Program);1
+173904;Овсяные хлопья (сухие);Крупы и гарниры;379;13.15;6.52;57.60;10.10;Gcb;Cereals, oats, regular and quick, not fortified, dry;1
+173905;Овсяная каша на воде;Крупы и гарниры;71;2.54;1.52;10.30;1.70;Gcb;Cereals, oats, regular and quick, unenriched, cooked with water (includes boiling and microwaving), without salt;1
+169702;Пшено (сухое);Крупы и гарниры;378;11.02;4.22;64.35;8.50;cb;Millet, raw;1
+168871;Пшённая каша на воде;Крупы и гарниры;119;3.51;1.00;22.37;1.30;cb;Millet, cooked;1
+170284;Перловка (сухая);Крупы и гарниры;352;9.91;1.16;62.12;15.60;Gc;Barley, pearled, raw;1
+170285;Перловка варёная;Крупы и гарниры;123;2.26;0.44;24.42;3.80;Gc;Barley, pearled, cooked;1
+170688;Булгур (сухой);Крупы и гарниры;342;12.29;1.33;63.37;12.50;Gc;Bulgur, dry;1
+170287;Булгур варёный;Крупы и гарниры;83;3.08;0.24;14.08;4.50;Gc;Bulgur, cooked;1
+169715;Манная крупа (сухая);Крупы и гарниры;360;12.68;1.05;68.93;3.90;Gcb;Semolina, enriched;1
+171659;Манная каша на воде;Крупы и гарниры;55;1.82;0.34;10.12;0.80;Gcb;Cereals, farina, enriched, assorted brands including CREAM OF WHEAT, quick (1-3 minutes), cooked with water, without salt;1
+169699;Кускус (сухой);Крупы и гарниры;376;12.76;0.64;72.43;5.00;Gc;Couscous, dry;1
+169700;Кускус варёный;Крупы и гарниры;112;3.79;0.16;21.82;1.40;Gc;Couscous, cooked;1
+168874;Киноа (сухая);Крупы и гарниры;368;14.12;6.07;57.16;7.00;c;Quinoa, uncooked;1
+168917;Киноа варёная;Крупы и гарниры;120;4.40;1.92;18.50;2.80;c;Quinoa, cooked;1
+171655;Кукурузная каша на воде;Крупы и гарниры;71;1.71;0.46;13.96;0.80;cb;Cereals, corn grits, white, regular and quick, enriched, cooked with water, without salt;1
+169736;Макароны (сухие);Крупы и гарниры;371;13.04;1.51;71.47;3.20;Gc;Pasta, dry, enriched;1
+169737;Макароны варёные;Крупы и гарниры;158;5.80;0.93;29.06;1.80;Gc;Pasta, cooked, enriched, without added salt;1
+169731;Лапша яичная (сухая);Крупы и гарниры;384;14.16;4.44;67.97;3.30;GEc;Noodles, egg, dry, enriched;1
+168919;Лапша яичная варёная;Крупы и гарниры;138;4.54;2.07;23.96;1.20;GEc;Noodles, egg, cooked, enriched, with added salt;1
+170440;Картофель отварной (без кожуры);Крупы и гарниры;86;1.71;0.10;18.21;1.80;c;Potatoes, boiled, cooked without skin, flesh, without salt;1
+170093;Картофель запечённый в кожуре;Крупы и гарниры;93;2.50;0.13;18.95;2.20;c;Potatoes, baked, flesh and skin, without salt;1
+168555;Картофельное пюре (молоко, масло);Крупы и гарниры;113;1.86;4.22;15.31;1.50;Dc;Potatoes, mashed, home-prepared, whole milk and butter added;1
+168482;Батат (сырой);Крупы и гарниры;86;1.57;0.05;17.12;3.00;c;Sweet potato, raw, unprepared (Includes foods for USDA's Food Distribution Program);1
+168894;Мука пшеничная;Крупы и гарниры;364;10.33;0.98;73.61;2.70;Gx;Wheat flour, white, all-purpose, enriched, bleached;1
+170687;Мука гречневая;Крупы и гарниры;335;12.62;3.10;60.59;10.00;x;Buckwheat flour, whole-groat;1
+168872;Овсяные отруби;Крупы и гарниры;246;17.30;7.03;50.82;15.40;Gb;Oat bran, raw;1
+169722;Пшеничные отруби;Крупы и гарниры;216;15.55;4.25;21.71;42.80;Gx;Wheat bran, crude;1
+171646;Гранола (домашняя);Крупы и гарниры;489;13.67;24.31;44.98;8.90;GNb;Cereals ready-to-eat, granola, homemade;1
+171077;Куриная грудка (сырая);Мясо и птица;120;22.50;2.62;0.00;0.00;Mp;Chicken, broiler or fryers, breast, skinless, boneless, meat only, raw;1
+171477;Куриная грудка запечённая;Мясо и птица;165;31.02;3.57;0.00;0.00;Mp;Chicken, broilers or fryers, breast, meat only, cooked, roasted;1
+171478;Куриная грудка тушёная/отварная;Мясо и птица;151;28.98;3.03;0.00;0.00;Mp;Chicken, broilers or fryers, breast, meat only, cooked, stewed;1
+172388;Куриное бедро без кожи, запечённое;Мясо и птица;179;24.76;8.15;0.00;0.00;Mp;Chicken, broilers or fryers, thigh, meat only, cooked, roasted;1
+172389;Куриное бедро без кожи, тушёное;Мясо и птица;195;25.00;9.79;0.00;0.00;Mp;Chicken, broilers or fryers, thigh, meat only, cooked, stewed;1
+173630;Куриные крылья запечённые;Мясо и птица;254;23.79;16.87;0.00;0.00;Mx;Chicken, broilers or fryers, wing, meat and skin, cooked, roasted;1
+171450;Курица целая с кожей, запечённая;Мясо и птица;239;27.30;13.60;0.00;0.00;Mp;Chicken, broilers or fryers, meat and skin, cooked, roasted;1
+171451;Курица (мясо) тушёная/отварная;Мясо и птица;177;27.29;6.71;0.00;0.00;Mp;Chicken, broilers or fryers, meat only, cooked, stewed;1
+171116;Фарш куриный (сырой);Мясо и птица;143;17.44;8.10;0.04;0.00;Mx;Chicken, ground, raw;1
+171060;Печень куриная (сырая);Мясо и птица;119;16.92;4.83;0.73;0.00;Mx;Chicken, liver, all classes, raw;1
+171061;Печень куриная отварная;Мясо и птица;167;24.46;6.51;0.87;0.00;Mp;Chicken, liver, all classes, cooked, simmered;1
+171057;Куриные потроха (сырые);Мясо и птица;124;17.88;4.47;1.80;0.00;Mx;Chicken, broilers or fryers, giblets, raw;1
+171098;Грудка индейки (сырая);Мясо и птица;114;23.66;1.48;0.14;0.00;Mp;Turkey, whole, breast, meat only, raw;1
+171496;Грудка индейки запечённая;Мясо и птица;147;30.13;2.08;0.00;0.00;Mp;Turkey, whole, breast, meat only, cooked, roasted;1
+171505;Фарш индейки (сырой);Мясо и птица;148;19.66;7.66;0.00;0.00;Mx;Turkey, Ground, raw;1
+171506;Фарш индейки приготовленный;Мясо и птица;203;27.37;10.40;0.00;0.00;Mp;Turkey, Ground, cooked;1
+169542;Говяжья вырезка (сырая);Мясо и птица;247;19.61;18.16;0.00;0.00;Mx;"Beef, tenderloin, steak, separable lean and fat, trimmed to 1/8"" fat, all grades, raw";1
+169543;Говяжья вырезка, стейк жареный на гриле;Мясо и птица;267;26.46;17.12;0.00;0.00;Mp;"Beef, tenderloin, steak, separable lean and fat, trimmed to 1/8"" fat, all grades, cooked, broiled";1
+174763;Говядина, огузок/филе постное (сырое);Мясо и птица;135;21.91;4.62;0.00;0.00;Mx;"Beef, top sirloin, steak, separable lean only, trimmed to 1/8"" fat, choice, raw";1
+171790;Фарш говяжий 5% жира (сырой);Мясо и птица;137;21.41;5.00;0.00;0.00;Mx;Beef, ground, 95% lean meat / 5% fat, raw;1
+171791;Котлета из говяжьего фарша 5%, приготовленная;Мясо и птица;174;26.29;6.80;0.00;0.00;Mp;Beef, ground, 95% lean meat / 5% fat, patty, cooked, broiled;1
+171796;Фарш говяжий 15% жира (сырой);Мясо и птица;215;18.59;15.00;0.00;0.00;Mx;Beef, ground, 85% lean meat / 15% fat, raw (Includes foods for USDA's Food Distribution Program);1
+174036;Фарш говяжий 20% жира (сырой);Мясо и птица;254;17.17;20.00;0.00;0.00;Mx;Beef, ground, 80% lean meat / 20% fat, raw;1
+169451;Печень говяжья (сырая);Мясо и птица;135;20.36;3.63;3.89;0.00;Mx;Beef, variety meats and by-products, liver, raw;1
+168626;Печень говяжья тушёная;Мясо и птица;191;29.08;5.26;5.13;0.00;Mp;Beef, variety meats and by-products, liver, cooked, braised;1
+170196;Язык говяжий (сырой);Мясо и птица;224;14.90;16.09;3.68;0.00;Mx;Beef, variety meats and by-products, tongue, raw;1
+170598;Язык говяжий отварной;Мясо и птица;284;19.29;22.30;0.00;0.00;Mp;Beef, variety meats and by-products, tongue, cooked, simmered;1
+172534;Печень телячья (сырая);Мясо и птица;140;19.93;4.85;2.91;0.00;Mx;Veal, variety meats and by-products, liver, raw;1
+168249;Свиная вырезка (сырая);Мясо и птица;109;20.95;2.17;0.00;0.00;Mx;Pork, fresh, loin, tenderloin, separable lean only, raw;1
+168250;Свиная вырезка запечённая;Мясо и птица;143;26.17;3.51;0.00;0.00;Mp;Pork, fresh, loin, tenderloin, separable lean only, cooked, roasted;1
+168230;Свиная корейка постная (сырая);Мясо и птица;143;21.43;5.66;0.00;0.00;Mx;Pork, fresh, loin, whole, separable lean only, raw;1
+167821;Свиная корейка запечённая;Мясо и птица;248;27.09;14.65;0.00;0.00;Mp;Pork, fresh, loin, whole, separable lean and fat, cooked, roasted;1
+167843;Свиная лопатка (сырая);Мясо и птица;236;17.18;17.99;0.00;0.00;Mx;Pork, fresh, shoulder, whole, separable lean and fat, raw;1
+167844;Свиная лопатка запечённая;Мясо и птица;292;23.28;21.39;0.00;0.00;Mp;Pork, fresh, shoulder, whole, separable lean and fat, cooked, roasted;1
+168372;Фарш свиной 16% жира (сырой);Мясо и птица;218;17.99;16.00;0.44;0.00;Mx;Pork, ground, 84% lean / 16% fat, raw;1
+167812;Свиная грудинка (сырая);Мясо и птица;518;9.34;53.01;0.00;0.00;Mx;Pork, fresh, belly, raw;1
+168287;Сало солёное;Мясо и птица;748;5.05;80.50;0.00;0.00;Mx;Pork, cured, salt pork, raw;1
+167862;Печень свиная (сырая);Мясо и птица;134;21.39;3.65;2.47;0.00;Mx;Pork, fresh, variety meats and by-products, liver, raw;1
+172479;Баранина (сырая, средняя);Мясо и птица;267;16.88;21.59;0.00;0.00;Mx;"Lamb, composite of trimmed retail cuts, separable lean and fat, trimmed to 1/4"" fat, choice, raw";1
+174312;Баранина, окорок запечённый;Мясо и птица;258;25.55;16.48;0.00;0.00;Mp;"Lamb, leg, whole (shank and sirloin), separable lean and fat, trimmed to 1/4"" fat, choice, cooked, roasted";1
+172521;Кролик (сырой);Мясо и птица;136;20.05;5.55;0.00;0.00;Mx;Game meat, rabbit, domesticated, composite of cuts, raw;1
+172522;Кролик запечённый;Мясо и птица;197;29.06;8.05;0.00;0.00;Mp;Game meat, rabbit, domesticated, composite of cuts, cooked, roasted;1
+172408;Утка с кожей (сырая);Мясо и птица;404;11.49;39.34;0.00;0.00;Mx;Duck, domesticated, meat and skin, raw;1
+171511;Утиная грудка без кожи, приготовленная;Мясо и птица;140;27.60;2.50;0.00;0.00;Mp;Duck, young duckling, domesticated, White Pekin, breast, meat only, boneless, cooked without skin, broiled;0
+173864;Ветчина нарезка (~11% жира);Колбасы и мясные изделия;164;16.60;8.80;2.33;1.30;Mps;Ham, sliced, regular (approximately 11% fat);1
+173863;Ветчина нежирная (~4% жира);Колбасы и мясные изделия;107;16.85;4.04;0.70;0.00;Mps;Ham, sliced, pre-packaged, deli meat (96%fat free, water added);1
+173862;Сосиски говяжьи;Колбасы и мясные изделия;315;11.69;28.10;2.97;0.00;Mx;Frankfurter, beef, unheated;1
+171633;Сосиски (мясо и птица), отварные;Колбасы и мясные изделия;298;10.31;26.28;4.96;0.00;Mx;Frankfurter, meat and poultry, cooked, boiled;1
+171624;Сосиски куриные;Колбасы и мясные изделия;223;15.51;16.19;2.74;0.00;Mx;Frankfurter, chicken;1
+171637;Колбаса варёная (типа «болонья»);Колбасы и мясные изделия;281;10.34;23.77;6.31;0.00;Mx;Bologna, meat and poultry;1
+172936;Салями варёная (говядина/свинина);Колбасы и мясные изделия;336;21.85;25.90;2.40;0.00;Mx;Salami, cooked, beef and pork;1
+174585;Колбаски копчёные (свинина/говядина);Колбасы и мясные изделия;320;12.00;28.73;2.42;0.00;Mx;Sausage, smoked link sausage, pork and beef;1
+167914;Бекон запечённый;Колбасы и мясные изделия;548;35.73;43.27;1.35;0.00;Mx;Pork, cured, bacon, cooked, baked;1
+170602;Говядина консервированная (солонина);Колбасы и мясные изделия;250;27.10;14.93;0.00;0.00;Mx;Beef, cured, corned beef, canned;1
+173871;Колбаски из индейки, приготовленные;Колбасы и мясные изделия;196;23.89;10.44;0.00;0.00;Mx;Sausage, turkey, fresh, cooked;1
+171955;Треска (сырая);Рыба и морепродукты;82;17.81;0.67;0.00;0.00;Fx;Fish, cod, Atlantic, raw;1
+171956;Треска запечённая;Рыба и морепродукты;105;22.83;0.86;0.00;0.00;Fp;Fish, cod, Atlantic, cooked, dry heat;1
+173725;Минтай (сырой);Рыба и морепродукты;76;17.17;0.82;0.00;0.00;Fx;Fish, pollock, Alaska, raw;0
+173726;Минтай приготовленный;Рыба и морепродукты;87;19.42;0.99;0.00;0.00;Fp;Fish, pollock, Alaska, cooked;0
+171964;Пикша (сырая);Рыба и морепродукты;74;16.32;0.45;0.00;0.00;Fx;Fish, haddock, raw;1
+173713;Хек/путассу (сырой);Рыба и морепродукты;90;18.31;1.31;0.00;0.00;Fx;Fish, whiting, mixed species, raw;1
+175161;Хек/путассу запечённый;Рыба и морепродукты;116;23.48;1.69;0.00;0.00;Fp;Fish, whiting, mixed species, cooked, dry heat;1
+174196;Камбала (сырая);Рыба и морепродукты;70;12.41;1.93;0.00;0.00;Fx;Fish, flatfish (flounder and sole species), raw;1
+174197;Камбала запечённая;Рыба и морепродукты;86;15.24;2.37;0.00;0.00;Fp;Fish, flatfish (flounder and sole species), cooked, dry heat;1
+174200;Палтус (сырой);Рыба и морепродукты;91;18.56;1.33;0.00;0.00;Fx;Fish, halibut, Atlantic and Pacific, raw;1
+174201;Палтус запечённый;Рыба и морепродукты;111;22.54;1.61;0.00;0.00;Fp;Fish, halibut, Atlantic and Pacific, cooked, dry heat;1
+175167;Сёмга/лосось атлантический (сырой);Рыба и морепродукты;208;20.42;13.42;0.00;0.00;Fx;Fish, salmon, Atlantic, farmed, raw;1
+175168;Сёмга запечённая;Рыба и морепродукты;206;22.10;12.35;0.00;0.00;Fp;Fish, salmon, Atlantic, farmed, cooked, dry heat;1
+175138;Горбуша (сырая);Рыба и морепродукты;127;20.50;4.40;0.00;0.00;Fx;Fish, salmon, pink, raw;1
+172001;Горбуша запечённая;Рыба и морепродукты;153;24.58;5.28;0.00;0.00;Fp;Fish, salmon, pink, cooked, dry heat;1
+175175;Горбуша консервированная;Рыба и морепродукты;138;23.10;5.02;0.00;0.00;Fp;Fish, salmon, pink, canned, drained solids;1
+173689;Кета (сырая);Рыба и морепродукты;120;20.14;3.77;0.00;0.00;Fx;Fish, salmon, chum, raw;1
+173715;Кижуч (сырой);Рыба и морепродукты;160;21.27;7.67;0.00;0.00;Fx;Fish, salmon, coho, farmed, raw;1
+173717;Форель радужная (сырая);Рыба и морепродукты;141;19.94;6.18;0.00;0.00;Fx;Fish, trout, rainbow, farmed, raw;1
+173718;Форель запечённая;Рыба и морепродукты;168;23.80;7.38;0.00;0.00;Fp;Fish, trout, rainbow, farmed, cooked, dry heat;1
+175116;Сельдь атлантическая (сырая);Рыба и морепродукты;158;17.96;9.04;0.00;0.00;Fx;Fish, herring, Atlantic, raw;1
+175117;Сельдь запечённая;Рыба и морепродукты;203;23.03;11.59;0.00;0.00;Fp;Fish, herring, Atlantic, cooked, dry heat;1
+175118;Сельдь маринованная;Рыба и морепродукты;262;14.19;18.00;9.64;0.00;Fs;Fish, herring, Atlantic, pickled;1
+173668;Сельдь копчёная;Рыба и морепродукты;217;24.58;12.37;0.00;0.00;Fx;Fish, herring, Atlantic, kippered;1
+173669;Сельдь тихоокеанская (сырая);Рыба и морепродукты;195;16.39;13.88;0.00;0.00;Fx;Fish, herring, Pacific, raw;1
+175119;Скумбрия (сырая);Рыба и морепродукты;205;18.60;13.89;0.00;0.00;Fx;Fish, mackerel, Atlantic, raw;1
+175120;Скумбрия запечённая;Рыба и морепродукты;262;23.85;17.81;0.00;0.00;Fp;Fish, mackerel, Atlantic, cooked, dry heat;1
+171952;Карп (сырой);Рыба и морепродукты;127;17.83;5.60;0.00;0.00;Fx;Fish, carp, raw;1
+174185;Карп запечённый;Рыба и морепродукты;162;22.86;7.17;0.00;0.00;Fp;Fish, carp, cooked, dry heat;1
+173680;Щука (сырая);Рыба и морепродукты;88;19.26;0.69;0.00;0.00;Fx;Fish, pike, northern, raw;1
+175127;Щука запечённая;Рыба и морепродукты;113;24.69;0.88;0.00;0.00;Fp;Fish, pike, northern, cooked, dry heat;1
+173678;Окунь (сырой);Рыба и морепродукты;91;19.39;0.92;0.00;0.00;Fx;Fish, perch, mixed species, raw;1
+173679;Окунь запечённый;Рыба и морепродукты;117;24.86;1.18;0.00;0.00;Fp;Fish, perch, mixed species, cooked, dry heat;1
+175176;Тилапия (сырая);Рыба и морепродукты;96;20.08;1.70;0.00;0.00;Fx;Fish, tilapia, raw;1
+175177;Тилапия запечённая;Рыба и морепродукты;128;26.15;2.65;0.00;0.00;Fp;Fish, tilapia, cooked, dry heat;1
+175146;Корюшка (сырая);Рыба и морепродукты;97;17.63;2.42;0.00;0.00;Fx;Fish, smelt, rainbow, raw;1
+171986;Тунец консервированный в собственном соку;Рыба и морепродукты;116;25.51;0.82;0.00;0.00;Fp;Fish, tuna, light, canned in water, without salt, drained solids;1
+173708;Тунец консервированный в масле;Рыба и морепродукты;198;29.13;8.21;0.00;0.00;Fp;Fish, tuna, light, canned in oil, drained solids;1
+175139;Сардины в масле (консервы);Рыба и морепродукты;208;24.62;11.45;0.00;0.00;Fps;Fish, sardine, Atlantic, canned in oil, drained solids with bone;1
+175179;Креветки (сырые);Рыба и морепродукты;85;20.10;0.51;0.00;0.00;Fx;Crustaceans, shrimp, raw;0
+171971;Креветки варёные;Рыба и морепродукты;119;22.78;1.70;1.52;0.00;Fp;Crustaceans, shrimp, mixed species, cooked, moist heat (may contain additives to retain moisture);1
+174223;Кальмар (сырой);Рыба и морепродукты;92;15.58;1.38;3.08;0.00;Fx;Mollusks, squid, mixed species, raw;1
+174216;Мидии (сырые);Рыба и морепродукты;86;11.90;2.24;3.69;0.00;Fx;Mollusks, mussel, blue, raw;1
+174217;Мидии варёные;Рыба и морепродукты;172;23.80;4.48;7.39;0.00;Fp;Mollusks, mussel, blue, cooked, moist heat;1
+175164;Краб камчатский (сырой);Рыба и морепродукты;84;18.29;0.60;0.00;0.00;Fx;Crustaceans, crab, alaska king, raw;1
+174202;Краб камчатский варёный;Рыба и морепродукты;97;19.35;1.54;0.00;0.00;Fp;Crustaceans, crab, alaska king, cooked, moist heat;1
+174203;Крабовые палочки (сурими);Рыба и морепродукты;95;7.62;0.46;14.50;0.50;Fs;Crustaceans, crab, alaska king, imitation, made from surimi;1
+174188;Икра красная/чёрная зернистая;Рыба и морепродукты;264;24.60;17.90;4.00;0.00;Fx;Fish, caviar, black and red, granular;1
+175132;Икра (рыбная, сырая, разные виды);Рыба и морепродукты;143;22.32;6.42;1.50;0.00;Fx;Fish, roe, mixed species, raw;1
+168457;Морская капуста (ламинария, сырая);Овощи и зелень;43;1.68;0.56;8.27;1.30;v;Seaweed, kelp, raw;1
+171287;Яйцо куриное (сырое);Яйца;143;12.56;9.51;0.72;0.00;Epb;Egg, whole, raw, fresh;1
+172186;Яйцо варёное/пашот;Яйца;143;12.51;9.47;0.71;0.00;Epb;Egg, whole, cooked, poached;1
+172187;Яичница-болтунья;Яйца;149;9.99;10.98;1.61;0.00;DEpb;Egg, whole, cooked, scrambled;1
+173423;Яичница жареная;Яйца;196;13.61;14.84;0.83;0.00;Epb;Egg, whole, cooked, fried;1
+172185;Омлет;Яйца;154;10.57;11.66;0.64;0.00;Epb;Egg, whole, cooked, omelet;1
+172183;Яичный белок (сырой);Яйца;52;10.90;0.17;0.73;0.00;Epb;Egg, white, raw, fresh;1
+172184;Яичный желток (сырой);Яйца;322;15.86;26.54;3.59;0.00;Ex;Egg, yolk, raw, fresh;1
+171265;Молоко 3,25%;Молочные продукты;61;3.15;3.25;4.80;0.00;Dbd;Milk, whole, 3.25% milkfat, with added vitamin D;1
+171267;Молоко 2%;Молочные продукты;50;3.30;1.98;4.80;0.00;Dbd;Milk, reduced fat, fluid, 2% milkfat, with added vitamin A and vitamin D;1
+170872;Молоко 1%;Молочные продукты;42;3.37;0.97;4.99;0.00;Dbd;Milk, lowfat, fluid, 1% milkfat, with added vitamin A and vitamin D;1
+171269;Молоко обезжиренное;Молочные продукты;34;3.37;0.08;4.96;0.00;Dbd;Milk, nonfat, fluid, with added vitamin A and vitamin D (fat free or skim);1
+170904;Кефир 1% (натуральный);Молочные продукты;43;3.79;1.02;4.77;0.00;Dbsd;Kefir, lowfat, plain, LIFEWAY;1
+170874;Пахта/нежирный кисломолочный напиток;Молочные продукты;40;3.31;1.07;4.79;0.00;Dbsd;Milk, buttermilk, fluid, cultured, lowfat;1
+171284;Йогурт натуральный (цельное молоко);Молочные продукты;61;3.47;3.25;4.66;0.00;Dbs;Yogurt, plain, whole milk;1
+170886;Йогурт натуральный нежирный;Молочные продукты;63;5.25;1.55;7.04;0.00;Dbs;Yogurt, plain, low fat;1
+170894;Греческий йогурт 0%;Молочные продукты;59;10.19;0.39;3.60;0.00;Dpbs;Yogurt, Greek, plain, nonfat (Includes foods for USDA's Food Distribution Program);1
+170903;Греческий йогурт нежирный (~2%);Молочные продукты;73;9.95;1.92;3.94;0.00;Dpbs;Yogurt, Greek, plain, lowfat;1
+171285;Йогурт фруктовый нежирный;Молочные продукты;102;4.37;1.08;19.05;0.00;Dbs;Yogurt, fruit, low fat, 10 grams protein per 8 ounce;1
+172179;Творог зернёный (~4%, cottage cheese);Молочные продукты;98;11.12;4.30;3.38;0.00;Dpbs;Cheese, cottage, creamed, large or small curd;1
+172182;Творог зернёный 2%;Молочные продукты;81;10.45;2.27;4.76;0.00;Dpbs;Cheese, cottage, lowfat, 2% milkfat;1
+167703;Творог зернёный 1%, безлактозный;Молочные продукты;74;12.40;1.00;2.60;0.60;Zpbs;Cheese, cottage, lowfat, 1% milkfat, lactose reduced;1
+172181;Творог обезжиренный (сухой);Молочные продукты;72;10.34;0.29;6.66;0.00;Dpbs;Cheese, cottage, nonfat, uncreamed, dry, large or small curd;1
+170851;Рикотта;Молочные продукты;150;7.54;10.18;7.27;0.00;Dpb;Cheese, ricotta, whole milk;1
+171248;Рикотта полуобезжиренная;Молочные продукты;138;11.39;7.91;5.14;0.00;Dpb;Cheese, ricotta, part skim milk;1
+171241;Сыр гауда;Молочные продукты;356;24.94;27.44;2.22;0.00;Dbs;Cheese, gouda;1
+173419;Сыр эдам;Молочные продукты;357;24.99;28.57;1.43;0.00;Dbs;Cheese, edam;1
+170899;Сыр чеддер;Молочные продукты;410;24.25;33.82;2.13;0.00;Dbs;Cheese, cheddar, sharp, sliced;1
+171292;Сыр чеддер пониженной жирности;Молочные продукты;316;27.35;20.41;2.67;0.00;Dbs;Cheese, cheddar, reduced fat (Includes foods for USDA's Food Distribution Program);1
+170845;Моцарелла;Молочные продукты;299;22.17;22.14;2.40;0.00;Dbs;Cheese, mozzarella, whole milk;1
+173420;Сыр фета (брынза-типа);Молочные продукты;265;14.21;21.49;3.88;0.00;Dbs;Cheese, feta;1
+170848;Пармезан;Молочные продукты;392;35.75;25.00;3.22;0.00;Dx;Cheese, parmesan, hard;1
+172177;Сыр бри;Молочные продукты;334;20.75;27.68;0.45;0.00;Dx;Cheese, brie;1
+172178;Сыр камамбер;Молочные продукты;300;19.80;24.26;0.46;0.00;Dx;Cheese, camembert;1
+170850;Сыр проволоне;Молочные продукты;351;25.58;26.62;2.14;0.00;Dbs;Cheese, provolone;1
+173435;Козий сыр мягкий;Молочные продукты;264;18.52;21.08;0.00;0.00;Dbs;Cheese, goat, soft type;1
+171290;Сыр плавленый;Молочные продукты;371;18.13;31.79;3.70;0.00;Dx;Cheese, pasteurized process, American, without added vitamin D;1
+169079;Сливочный сыр (творожный) лёгкий;Молочные продукты;208;7.85;16.67;6.73;0.00;Dx;Cheese, cream, low fat;1
+171257;Сметана (~20%);Молочные продукты;198;2.44;19.35;4.63;0.00;Dx;Cream, sour, cultured;1
+171256;Сметана пониженной жирности (~10–15%);Молочные продукты;135;2.94;12.00;4.26;0.00;Dx;Cream, sour, reduced fat, cultured;1
+170857;Сливки 20% (столовые);Молочные продукты;195;2.96;19.10;3.66;0.00;Dx;Cream, fluid, light (coffee cream or table cream);1
+170859;Сливки 36% (для взбивания);Молочные продукты;340;2.84;36.08;2.84;0.00;Dx;Cream, fluid, heavy whipping;1
+171275;Сгущённое молоко с сахаром;Молочные продукты;321;7.91;8.70;54.40;0.00;Dx;Milk, canned, condensed, sweetened;1
+167575;Мороженое пломбир/ванильное;Молочные продукты;207;3.50;11.00;22.90;0.70;Dx;Ice creams, vanilla;1
+172446;Соевое молоко (без добавок);Молочные продукты;54;3.27;1.75;5.68;0.60;bd;Soymilk, original and vanilla, unfortified;1
+168751;Миндальное молоко (подслащённое);Молочные продукты;38;0.42;1.04;6.19;0.40;Nbd;Beverages, almond milk, sweetened, vanilla flavor, ready-to-drink;1
+172448;Тофу твёрдый;Бобовые и соя;78;9.04;4.17;1.95;0.90;p;Tofu, firm, prepared with calcium sulfate and magnesium chloride (nigari);1
+172449;Тофу мягкий;Бобовые и соя;61;7.17;3.69;0.98;0.20;p;Tofu, soft, prepared with calcium sulfate and magnesium chloride (nigari);1
+172421;Чечевица варёная;Бобовые и соя;116;9.02;0.38;12.23;7.90;pc;Lentils, mature seeds, cooked, boiled, without salt;1
+173757;Нут варёный;Бобовые и соя;164;8.86;2.59;19.82;7.60;pc;Chickpeas (garbanzo beans, bengal gram), mature seeds, cooked, boiled, without salt;1
+175194;Фасоль красная варёная;Бобовые и соя;127;8.67;0.50;15.40;7.40;pc;Beans, kidney, red, mature seeds, cooked, boiled, without salt;1
+174285;Фасоль красная консервированная;Бобовые и соя;124;7.98;1.05;15.99;5.50;pc;Beans, kidney, red, mature seeds, canned, drained solids;1
+175203;Фасоль белая варёная;Бобовые и соя;139;9.73;0.35;18.79;6.30;pc;Beans, white, mature seeds, cooked, boiled, without salt;1
+173735;Фасоль чёрная варёная;Бобовые и соя;132;8.86;0.54;15.01;8.70;pc;Beans, black, mature seeds, cooked, boiled, without salt;1
+172429;Горох колотый варёный;Бобовые и соя;118;8.34;0.39;12.80;8.30;pc;Peas, split, mature seeds, cooked, boiled, without salt;1
+174271;Соевые бобы варёные;Бобовые и соя;172;18.21;8.97;2.36;6.00;p;Soybeans, mature cooked, boiled, without salt;1
+168411;Эдамаме (приготовленные);Бобовые и соя;121;11.91;5.20;3.71;5.20;ps;Edamame, frozen, prepared;1
+172454;Хумус домашний;Бобовые и соя;177;4.86;8.59;16.12;4.00;s;Hummus, home prepared;1
+173177;Сывороточный протеин (изолят);Бобовые и соя;359;58.14;1.16;29.07;0.00;Dx;Beverages, Whey protein powder isolate;1
+169975;Капуста белокочанная;Овощи и зелень;25;1.28;0.10;3.30;2.50;v;Cabbage, raw;1
+169977;Капуста краснокочанная;Овощи и зелень;31;1.43;0.16;5.27;2.10;v;Cabbage, red, raw;1
+169279;Капуста квашеная;Овощи и зелень;19;0.91;0.14;1.38;2.90;v;Sauerkraut, canned, solids and liquids;1
+169986;Цветная капуста;Овощи и зелень;25;1.92;0.28;2.97;2.00;v;Cauliflower, raw;1
+170379;Брокколи;Овощи и зелень;34;2.82;0.37;4.04;2.60;v;Broccoli, raw;1
+170383;Брюссельская капуста;Овощи и зелень;43;3.38;0.30;5.15;3.80;v;Brussels sprouts, raw;1
+170393;Морковь;Овощи и зелень;41;0.93;0.24;6.78;2.80;v;Carrots, raw;1
+170394;Морковь отварная;Овощи и зелень;35;0.76;0.18;5.22;3.00;v;Carrots, cooked, boiled, drained, without salt;1
+169145;Свёкла;Овощи и зелень;43;1.61;0.17;6.76;2.80;v;Beets, raw;1
+169146;Свёкла отварная;Овощи и зелень;44;1.68;0.18;7.96;2.00;v;Beets, cooked, boiled, drained;1
+168409;Огурец;Овощи и зелень;15;0.65;0.11;3.13;0.50;vs;Cucumber, with peel, raw;1
+170457;Помидор;Овощи и зелень;18;0.88;0.20;2.69;1.20;vs;Tomatoes, red, ripe, raw, year round average;1
+170108;Перец сладкий красный;Овощи и зелень;26;0.99;0.30;3.93;2.10;vs;Peppers, sweet, red, raw;1
+170427;Перец сладкий зелёный;Овощи и зелень;20;0.86;0.17;2.94;1.70;v;Peppers, sweet, green, raw;1
+170000;Лук репчатый;Овощи и зелень;40;1.10;0.10;7.64;1.70;x;Onions, raw;1
+170005;Лук зелёный;Овощи и зелень;32;1.83;0.19;4.74;2.60;x;Onions, spring or scallions (includes tops and bulb), raw;1
+169230;Чеснок;Овощи и зелень;149;6.36;0.50;30.96;2.10;x;Garlic, raw;1
+169291;Кабачок/цукини;Овощи и зелень;17;1.21;0.32;2.11;1.00;v;Squash, summer, zucchini, includes skin, raw;1
+169228;Баклажан;Овощи и зелень;25;0.98;0.18;2.88;3.00;v;Eggplant, raw;1
+168448;Тыква;Овощи и зелень;26;1.00;0.10;6.00;0.50;v;Pumpkin, raw;1
+168462;Шпинат;Овощи и зелень;23;2.86;0.39;1.43;2.20;v;Spinach, raw;1
+169249;Салат листовой;Овощи и зелень;15;1.36;0.15;1.57;1.30;v;Lettuce, green leaf, raw;1
+169248;Салат айсберг;Овощи и зелень;14;0.90;0.14;1.77;1.20;v;Lettuce, iceberg (includes crisphead types), raw;1
+169276;Редис;Овощи и зелень;16;0.68;0.10;1.80;1.60;v;Radishes, raw;1
+169988;Сельдерей стеблевой;Овощи и зелень;14;0.69;0.17;1.37;1.60;v;Celery, raw;1
+170419;Горошек зелёный свежий;Овощи и зелень;81;5.42;0.40;8.75;5.70;v;Peas, green, raw;1
+170017;Горошек зелёный замороженный, отварной;Овощи и зелень;78;5.15;0.27;9.76;4.50;v;Peas, green, frozen, cooked, boiled, drained, without salt;1
+169214;Кукуруза консервированная;Овощи и зелень;67;2.29;1.22;12.34;2.00;v;Corn, sweet, yellow, canned, whole kernel, drained solids;1
+169961;Фасоль стручковая;Овощи и зелень;31;1.83;0.22;4.27;2.70;v;Beans, snap, green, raw;1
+169963;Фасоль стручковая замороженная, отварная;Овощи и зелень;28;1.49;0.17;3.45;3.00;v;Beans, snap, green, frozen, cooked, boiled, drained without salt;1
+169251;Шампиньоны;Овощи и зелень;22;3.09;0.34;2.26;1.00;v;Mushrooms, white, raw;1
+169252;Шампиньоны отварные;Овощи и зелень;28;2.17;0.47;3.09;2.20;v;Mushrooms, white, cooked, boiled, drained, without salt;1
+168580;Вёшенки;Овощи и зелень;33;3.31;0.41;3.79;2.30;v;Mushrooms, oyster, raw;1
+172233;Укроп;Овощи и зелень;43;3.46;1.12;4.92;2.10;x;Dill weed, fresh;1
+170416;Петрушка;Овощи и зелень;36;2.97;0.79;3.03;3.30;x;Parsley, fresh;1
+168558;Огурцы солёные/маринованные;Овощи и зелень;12;0.50;0.30;1.41;1.00;x;Pickles, cucumber, dill or kosher dill;1
+168389;Спаржа;Овощи и зелень;20;2.20;0.12;1.78;2.10;v;Asparagus, raw;1
+171705;Авокадо;Овощи и зелень;160;2.00;14.66;1.83;6.70;os;Avocados, raw, all commercial varieties;1
+170465;Репа;Овощи и зелень;28;0.90;0.10;4.63;1.80;v;Turnips, raw;1
+168421;Капуста кале;Овощи и зелень;35;2.92;1.49;0.32;4.10;v;Kale, raw;1
+169094;Маслины консервированные;Овощи и зелень;116;0.84;10.90;4.44;1.60;x;Olives, ripe, canned (small-extra large);1
+171688;Яблоко;Фрукты и ягоды;52;0.26;0.17;11.41;2.40;fsb;Apples, raw, with skin (Includes foods for USDA's Food Distribution Program);1
+167776;Груша;Фрукты и ягоды;63;0.39;0.16;11.91;3.10;fs;Pears, raw, bartlett (Includes foods for USDA's Food Distribution Program);1
+173944;Банан;Фрукты и ягоды;89;1.09;0.33;20.24;2.60;fsb;Bananas, raw;1
+169097;Апельсин;Фрукты и ягоды;47;0.94;0.12;9.35;2.40;fs;Oranges, raw, all commercial varieties;1
+169105;Мандарин;Фрукты и ягоды;53;0.81;0.31;11.54;1.80;fs;Tangerines, (mandarin oranges), raw;1
+173033;Грейпфрут;Фрукты и ягоды;32;0.63;0.10;6.98;1.10;fs;Grapefruit, raw, pink and red and white, all areas;1
+167746;Лимон (без кожуры);Фрукты и ягоды;29;1.10;0.30;6.52;2.80;x;Lemons, raw, without peel;1
+168153;Киви;Фрукты и ягоды;61;1.14;0.52;11.66;3.00;fs;Kiwifruit, green, raw;1
+174683;Виноград;Фрукты и ягоды;69;0.72;0.16;17.20;0.90;fs;Grapes, red or green (European type, such as Thompson seedless), raw;1
+169928;Персик;Фрукты и ягоды;39;0.91;0.25;8.04;1.50;fs;Peaches, yellow, raw;1
+171697;Абрикос;Фрукты и ягоды;48;1.40;0.39;9.12;2.00;fs;Apricots, raw;1
+169949;Слива;Фрукты и ягоды;46;0.70;0.28;10.02;1.40;fs;Plums, raw;1
+171719;Черешня;Фрукты и ягоды;63;1.06;0.20;13.91;2.10;fs;Cherries, sweet, raw;1
+173954;Вишня;Фрукты и ягоды;50;1.00;0.30;10.58;1.60;fs;Cherries, sour, red, raw;1
+167762;Клубника;Фрукты и ягоды;32;0.67;0.30;5.68;2.00;fsb;Strawberries, raw;1
+167755;Малина;Фрукты и ягоды;52;1.20;0.65;5.44;6.50;fsb;Raspberries, raw;1
+171711;Черника/голубика;Фрукты и ягоды;57;0.74;0.33;12.09;2.40;fsb;Blueberries, raw;1
+173946;Ежевика;Фрукты и ягоды;43;1.39;0.49;4.31;5.30;fs;Blackberries, raw;1
+173963;Смородина чёрная;Фрукты и ягоды;63;1.40;0.41;15.38;0.00;fs;Currants, european black, raw;0
+171722;Клюква;Фрукты и ягоды;46;0.46;0.13;8.37;3.60;x;Cranberries, raw;1
+173030;Крыжовник;Фрукты и ягоды;44;0.88;0.58;5.88;4.30;fs;Gooseberries, raw;1
+167765;Арбуз;Фрукты и ягоды;30;0.61;0.15;7.15;0.40;fs;Watermelon, raw;1
+169092;Дыня (канталупа);Фрукты и ягоды;34;0.84;0.19;7.26;0.90;fs;Melons, cantaloupe, raw;1
+169911;Дыня (медовая);Фрукты и ягоды;36;0.54;0.14;8.29;0.80;fs;Melons, honeydew, raw;1
+169124;Ананас;Фрукты и ягоды;50;0.54;0.12;11.72;1.40;fs;Pineapple, raw, all varieties;1
+169910;Манго;Фрукты и ягоды;60;0.82;0.38;13.38;1.60;fs;Mangos, raw;1
+169134;Гранат;Фрукты и ягоды;83;1.67;1.17;14.70;4.00;fs;Pomegranates, raw;1
+169941;Хурма;Фрукты и ягоды;70;0.58;0.19;14.99;3.60;fs;Persimmons, japanese, raw;1
+173021;Инжир свежий;Фрукты и ягоды;74;0.75;0.30;16.28;2.90;fs;Figs, raw;1
+168165;Изюм;Фрукты и ягоды;299;3.30;0.25;74.82;4.50;sb;Raisins, dark, seedless (Includes foods for USDA's Food Distribution Program);1
+173941;Курага;Фрукты и ягоды;241;3.39;0.51;55.34;7.30;sb;Apricots, dried, sulfured, uncooked;1
+168162;Чернослив;Фрукты и ягоды;240;2.18;0.38;56.78;7.10;sb;Plums, dried (prunes), uncooked;1
+168191;Финики;Фрукты и ягоды;277;1.81;0.15;68.27;6.70;s;Dates, medjool;1
+174665;Инжир сушёный;Фрукты и ягоды;249;3.30;0.93;54.07;9.80;s;Figs, dried, uncooked;1
+170187;Грецкий орех;Орехи и семена;654;15.23;65.21;7.01;6.70;Nos;Nuts, walnuts, english;1
+170567;Миндаль;Орехи и семена;579;21.15;49.93;9.05;12.50;Nos;Nuts, almonds;1
+170581;Фундук;Орехи и семена;628;14.95;60.75;7.00;9.70;Nos;Nuts, hazelnuts or filberts;1
+170162;Кешью;Орехи и семена;553;18.22;43.85;26.89;3.30;Nos;Nuts, cashew nuts, raw;1
+170591;Кедровые орехи;Орехи и семена;673;13.69;68.37;9.38;3.70;Nos;Nuts, pine nuts, dried;1
+170184;Фисташки (сырые);Орехи и семена;560;20.16;45.32;16.57;10.60;Nos;Nuts, pistachio nuts, raw;1
+172430;Арахис (сырой);Орехи и семена;567;25.80;49.24;7.63;8.50;Nos;Peanuts, all types, raw;1
+173806;Арахис жареный без соли;Орехи и семена;587;24.35;49.66;12.86;8.40;Nos;Peanuts, all types, dry-roasted, without salt;1
+172470;Арахисовая паста без соли;Орехи и семена;598;22.21;51.36;17.31;5.00;Nob;Peanut butter, smooth style, without salt;1
+170562;Семечки подсолнечника (очищенные);Орехи и семена;584;20.78;51.46;11.40;8.60;os;Seeds, sunflower seed kernels, dried;1
+170556;Тыквенные семечки (очищенные);Орехи и семена;559;30.23;49.05;4.71;6.00;os;Seeds, pumpkin and squash seed kernels, dried;1
+169414;Семена льна;Орехи и семена;534;18.29;42.16;1.58;27.30;ob;Seeds, flaxseed;1
+170150;Кунжут;Орехи и семена;573;17.73;49.67;11.65;11.80;x;Seeds, sesame seeds, whole, dried;1
+170554;Семена чиа;Орехи и семена;486;16.54;30.74;7.72;34.40;ob;Seeds, chia seeds, dried;1
+170170;Кокосовая стружка (без сахара);Орехи и семена;660;6.88;64.53;7.35;16.30;x;Nuts, coconut meat, dried (desiccated), not sweetened;1
+172684;Хлеб ржаной;Хлеб и выпечка;259;8.50;3.30;42.50;5.80;Gcb;Bread, rye;1
+174918;Хлеб ржаной тёмный цельнозерновой (pumpernickel);Хлеб и выпечка;250;8.70;3.10;41.00;6.50;Gcb;Bread, pumpernickel;1
+174924;Хлеб белый пшеничный;Хлеб и выпечка;266;8.85;3.33;46.72;2.70;Gcb;Bread, white, commercially prepared (includes soft bread crumbs);1
+172688;Хлеб цельнозерновой;Хлеб и выпечка;252;12.45;3.50;36.71;6.00;Gcb;Bread, whole-wheat, commercially prepared;1
+168013;Хлеб многозерновой;Хлеб и выпечка;265;13.36;4.23;35.94;7.40;Gcb;Bread, multi-grain (includes whole-grain);1
+174915;Лаваш/пита;Хлеб и выпечка;275;9.10;1.20;53.50;2.20;Gc;Bread, pita, white, enriched;1
+175037;Тортилья пшеничная;Хлеб и выпечка;306;8.20;7.99;45.88;3.50;Gc;Tortillas, ready-to-bake or -fry, flour, refrigerated;1
+174899;Бублик/бейгл;Хлеб и выпечка;264;10.56;1.32;50.78;1.60;Gx;Bagels, plain, enriched, with calcium propionate (includes onion, poppy, sesame);1
+174987;Круассан;Хлеб и выпечка;406;8.20;21.00;43.20;2.60;DGx;Croissants, butter;1
+175009;Блины/оладьи (домашние);Хлеб и выпечка;227;6.40;9.70;28.30;0.00;DEGb;Pancakes, plain, prepared from recipe;0
+175039;Вафли домашние;Хлеб и выпечка;291;7.90;14.10;32.90;0.00;DEGx;Waffles, plain, prepared from recipe;0
+172725;Печенье овсяное;Хлеб и выпечка;450;6.20;18.10;65.90;2.80;Gx;Cookies, oatmeal, commercially prepared, regular;1
+174950;Печенье сдобное (масляное);Хлеб и выпечка;467;6.10;18.80;68.10;0.80;DGx;Cookies, butter, commercially prepared, enriched;1
+172707;Бисквит домашний;Хлеб и выпечка;297;7.30;4.30;57.70;0.00;EGx;Cake, sponge, prepared from recipe;0
+175012;Пирог яблочный;Хлеб и выпечка;265;2.40;12.50;37.10;0.00;Gx;Pie, apple, prepared from recipe;0
+168855;Хлебцы рисовые (с рожью);Хлеб и выпечка;386;8.10;3.80;75.90;4.00;Gs;Snacks, rice cakes, brown rice, rye;1
+167967;Хлебцы рисовые с гречкой;Хлеб и выпечка;380;9.00;3.50;76.30;3.80;s;Snacks, rice cakes, brown rice, buckwheat;1
+171413;Масло оливковое;Масла и жиры;884;0.00;100.00;0.00;0.00;o;Oil, olive, salad or cooking;1
+171025;Масло подсолнечное;Масла и жиры;884;0.00;100.00;0.00;0.00;o;Oil, sunflower, linoleic, (approx. 65%);1
+172336;Масло рапсовое;Масла и жиры;884;0.00;100.00;0.00;0.00;o;Oil, canola;1
+167702;Масло льняное;Масла и жиры;884;0.11;99.98;0.00;0.00;o;Oil, flaxseed, cold pressed;1
+171029;Масло кукурузное;Масла и жиры;900;0.00;100.00;0.00;0.00;o;Oil, corn, industrial and retail, all purpose salad or cooking;1
+173410;Масло сливочное;Масла и жиры;717;0.85;81.11;0.06;0.00;Do;Butter, salted;1
+171314;Масло топлёное (гхи);Масла и жиры;900;0.00;100.00;0.00;0.00;Zo;Butter, Clarified butter (ghee);1
+169052;Спред сливочно-растительный 80%;Масла и жиры;718;0.90;80.70;0.60;0.00;Dx;Margarine-like, butter-margarine blend, 80% fat, stick, without salt;1
+171009;Майонез;Масла и жиры;680;0.96;74.85;0.57;0.00;Ex;Salad dressing, mayonnaise, regular;1
+171401;Свиной жир (смалец);Масла и жиры;902;0.00;100.00;0.00;0.00;Mx;Lard;1
+173577;Рыбий жир (печени трески);Масла и жиры;902;0.00;100.00;0.00;0.00;Fx;Fish oil, cod liver;1
+169655;Сахар;Сладости и соусы;387;0.00;0.00;99.98;0.00;x;Sugars, granulated;1
+169640;Мёд;Сладости и соусы;304;0.30;0.00;82.20;0.20;Hx;Honey;1
+169641;Варенье/джем;Сладости и соусы;278;0.37;0.07;67.76;1.10;x;Jams and preserves;1
+170273;Шоколад тёмный 70–85%;Сладости и соусы;598;7.79;42.63;35.00;10.90;x;Chocolate, dark, 70-85% cacao solids;1
+167587;Шоколад молочный;Сладости и соусы;535;7.65;29.66;56.00;3.40;Dx;Candies, milk chocolate;1
+167995;Зефир/маршмеллоу;Сладости и соусы;318;1.80;0.20;81.20;0.10;x;Candies, marshmallows;1
+167996;Халва;Сладости и соусы;469;12.49;21.52;55.99;4.50;x;Candies, halavah, plain;1
+169661;Кленовый сироп;Сладости и соусы;260;0.04;0.06;67.04;0.00;x;Syrups, maple;1
+168556;Кетчуп;Сладости и соусы;101;1.04;0.10;27.10;0.30;x;Catsup;1
+172234;Горчица;Сладости и соусы;60;3.74;3.34;1.83;4.00;x;Mustard, prepared, yellow;1
+171192;Соус томатный для пасты;Сладости и соусы;50;1.39;1.61;5.63;1.80;x;Sauce, pasta, spaghetti/marinara, ready-to-serve;1
+174278;Соевый соус;Сладости и соусы;60;10.51;0.10;4.77;0.80;x;Soy sauce made from soy (tamari);1
+169593;Какао-порошок (без сахара);Сладости и соусы;228;19.60;13.70;20.90;37.00;x;Cocoa, dry powder, unsweetened;1
+169677;Чипсы картофельные;Сладости и соусы;532;6.39;33.98;50.73;3.10;x;Snacks, potato chips, plain, salted;1
+173647;Вода питьевая;Напитки;0;0.00;0.00;0.00;0.00;d;Beverages, water, tap, drinking;1
+171890;Кофе чёрный заваренный;Напитки;1;0.12;0.02;0.00;0.00;d;Beverages, coffee, brewed, prepared with tap water;1
+173227;Чай чёрный заваренный;Напитки;1;0.00;0.00;0.30;0.00;d;Beverages, tea, black, brewed, prepared with tap water;1
+171917;Чай зелёный заваренный;Напитки;1;0.22;0.00;0.00;0.00;d;Beverages, tea, green, brewed, regular;1
+173933;Сок яблочный;Напитки;46;0.10;0.13;11.10;0.20;d;Apple juice, canned or bottled, unsweetened, without added ascorbic acid;1
+169098;Сок апельсиновый свежевыжатый;Напитки;45;0.70;0.20;10.20;0.20;d;Orange juice, raw (Includes foods for USDA's Food Distribution Program);1
+170545;Сок томатный без соли;Напитки;17;0.85;0.29;3.13;0.40;d;Tomato juice, canned, without salt added;1
+174852;Кола (с сахаром);Напитки;42;0.00;0.25;10.36;0.00;d;Beverages, carbonated, cola, regular;1
+174123;Какао-напиток (смесь на воде);Напитки;55;0.92;0.55;11.04;0.50;Dd;Beverages, Cocoa mix, powder, prepared with water;1
+168746;Пиво;Напитки;43;0.46;0.00;3.55;0.00;GAx;Alcoholic beverage, beer, regular, all;1
+173190;Вино красное сухое;Напитки;85;0.07;0.00;2.61;0.00;Ax;Alcoholic beverage, wine, table, red;1
+173195;Вино белое сухое;Напитки;80;0.07;0.00;3.31;0.00;Ax;Alcoholic beverage, wine, table, white, Chenin Blanc;0
+174815;Водка/крепкий алкоголь 40%;Напитки;231;0.00;0.00;0.00;0.00;Ax;Alcoholic beverage, distilled, all (gin, rum, vodka, whiskey) 80 proof;1
+172909;Суп куриный с лапшой (консервы, разведённый);Готовые блюда;24;1.16;0.76;2.47;0.50;MGEx;Soup, chicken noodle, canned, prepared with equal volume water;1
+174565;Суп овощной с говядиной (консервы, разведённый);Готовые блюда;31;2.23;0.76;3.26;0.80;Mx;Soup, vegetable beef, canned, prepared with equal volume water;1
+172913;Суп минестроне (консервы, разведённый);Готовые блюда;34;1.77;1.04;4.26;0.40;Gx;Soup, minestrone, canned, prepared with equal volume water;1
+169779;Вареники с картофелем/сыром (заморож.);Готовые блюда;195;5.26;6.14;28.74;0.90;DGx;Dumpling, potato- or cheese-filled, frozen;1
+170317;Пицца с сыром;Готовые блюда;268;10.36;12.28;26.82;2.20;DGx;Pizza, cheese topping, regular crust, frozen, cooked;1
+172106;Лазанья овощная;Готовые блюда;139;6.87;6.04;12.28;1.90;DGx;Lasagna, Vegetable, frozen, baked;1
+170694;Гамбургер;Готовые блюда;263;13.30;10.18;27.77;1.80;MGx;"Fast foods, hamburger; single, regular patty; with condiments";1
+170698;Картофель фри;Готовые блюда;312;3.43;14.73;37.64;3.80;x;Fast foods, potato, french fried in vegetable oil;1
+172097;Чили кон карне с фасолью;Готовые блюда;107;5.80;3.47;9.80;3.30;Mx;Chili con carne with beans, canned entree;1
+R1;Борщ постный (расчёт по рецептуре);Готовые блюда;24;0.50;0.96;3.00;0.74;x;"Recipe: Вода питьевая 550 г; Свёкла отварная 80 г; Капуста белокочанная 80 г; Картофель отварной (без кожуры) 70 г; Морковь отварная 40 г; Лук репчатый 20 г; Сок томатный без соли 40 г; Масло подсолнечное 8 г";1
+R2;Щи из свежей капусты (расчёт по рецептуре);Готовые блюда;21;0.38;0.97;2.34;0.65;x;"Recipe: Вода питьевая 600 г; Капуста белокочанная 120 г; Картофель отварной (без кожуры) 70 г; Морковь отварная 30 г; Лук репчатый 20 г; Масло подсолнечное 8 г";1
+R3;Винегрет (расчёт по рецептуре);Готовые блюда;74;1.62;3.32;7.97;2.27;v;"Recipe: Свёкла отварная 100 г; Картофель отварной (без кожуры) 80 г; Морковь отварная 50 г; Огурцы солёные/маринованные 50 г; Капуста квашеная 50 г; Горошек зелёный замороженный, отварной 40 г; Масло подсолнечное 12 г";1
+R4;Салат из огурцов и помидоров с маслом (расчёт);Готовые блюда;57;0.75;4.69;2.99;0.85;v;"Recipe: Огурец 100 г; Помидор 100 г; Лук репчатый 10 г; Масло подсолнечное 10 г";1
+R5;Салат «Оливье» (расчёт по рецептуре);Готовые блюда;179;4.73;13.70;7.95;1.36;DEMx;"Recipe: Картофель отварной (без кожуры) 100 г; Морковь отварная 30 г; Яйцо варёное/пашот 50 г; Колбаса варёная (типа «болонья») 60 г; Огурцы солёные/маринованные 40 г; Горошек зелёный замороженный, отварной 40 г; Майонез 40 г";1
+R6;Сырники (расчёт по рецептуре);Готовые блюда;191;11.52;8.62;16.10;0.30;DEGb;"Recipe: Творог зернёный (~4%, cottage cheese) 200 г; Яйцо куриное (сырое) 50 г; Мука пшеничная 30 г; Сахар 15 г; Масло подсолнечное 10 г; yield 0.9";1
+R7;Котлета домашняя говядина+свинина (расчёт);Готовые блюда;250;16.98;16.52;7.08;0.51;MEGx;"Recipe: Фарш говяжий 15% жира (сырой) 250 г; Фарш свиной 16% жира (сырой) 150 г; Хлеб белый пшеничный 60 г; Молоко 3,25% 60 г; Лук репчатый 60 г; Яйцо куриное (сырое) 50 г; Масло подсолнечное 15 г; yield 0.8";1
+R8;Плов с курицей (расчёт по рецептуре);Готовые блюда;145;7.82;4.50;16.90;0.67;Mx;"Recipe: Рис белый варёный 300 г; Курица (мясо) тушёная/отварная 120 г; Морковь 60 г; Лук репчатый 40 г; Масло подсолнечное 15 г";1
+R9;Овсяная каша на молоке 2% (расчёт);Готовые блюда;96;4.39;2.41;12.80;1.68;DGb;"Recipe: Овсяные хлопья (сухие) 50 г; Молоко 2% 200 г; Вода питьевая 50 г";1
+R10;Гречка с молоком (расчёт);Готовые блюда;71;3.34;1.30;11.02;1.35;Db;"Recipe: Гречка варёная 150 г; Молоко 2% 150 г";1
