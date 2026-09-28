@@ -14,19 +14,43 @@ import org.json.JSONObject
  * Локальное хранилище (SharedPreferences + JSON). Данные никогда не удаляются при обновлении:
  * добавление полей выполняется через значения по умолчанию, версия схемы — [SCHEMA].
  */
-class Store(ctx: Context) {
-    private val sp: SharedPreferences = ctx.applicationContext.getSharedPreferences("healthplan", Context.MODE_PRIVATE)
+class Store(private val sp: SharedPreferences, private val menuSp: SharedPreferences? = null) {
+    constructor(ctx: Context) : this(
+        ctx.applicationContext.getSharedPreferences(PREFS, Context.MODE_PRIVATE),
+        ctx.applicationContext.getSharedPreferences(MENU_PREFS, Context.MODE_PRIVATE))
 
     companion object {
+        /** Имена файлов SharedPreferences. НЕ переименовывать (см. README, «Обновления и данные»). */
+        const val PREFS = "healthplan"
+        const val MENU_PREFS = "menu"
         const val SCHEMA = 1
         @Volatile private var inst: Store? = null
-        fun get(ctx: Context): Store = inst ?: synchronized(this) { inst ?: Store(ctx).also { inst = it; it.migrate() } }
+        fun get(ctx: Context): Store = inst ?: synchronized(this) {
+            inst ?: Store(ctx).also {
+                // Снимок данных до любых миграций — один раз на каждую новую версию приложения
+                DataSafety.snapshotBeforeUpgrade(ctx.applicationContext, it)
+                it.migrate(); inst = it
+            }
+        }
     }
 
-    private fun migrate() {
+    /**
+     * Миграции схемы: только добавляющие, идемпотентные, под флагом версии схемы.
+     * Ничего не удаляют и не переименовывают. Новые поля читаются со значениями по умолчанию.
+     */
+    fun migrate() {
         val v = sp.getInt("schema", 0)
         if (v < SCHEMA) sp.edit().putInt("schema", SCHEMA).apply()
     }
+
+    val schemaVersion get() = sp.getInt("schema", 0)
+
+    /** Есть ли в хранилище пользовательские данные (для решения о снимке перед обновлением). */
+    val hasUserData get() = listOf("profile", "diary", "customFoods", "events", "weights").any { sp.contains(it) }
+
+    var lastVersionCode: Int
+        get() = sp.getInt("lastVersionCode", 0)
+        set(v) { sp.edit().putInt("lastVersionCode", v).apply() }
 
     // ---------- Профиль ----------
     var profile: Profile
@@ -59,6 +83,10 @@ class Store(ctx: Context) {
     val eventsInitialized get() = sp.contains("events")
 
     fun nextEventId(): Int { val n = sp.getInt("nextEventId", 100); sp.edit().putInt("nextEventId", n + 1).apply(); return n }
+    /** Текущее значение счётчика id событий (без увеличения); null — если счётчик ещё не создан. */
+    var nextEventIdRaw: Int?
+        get() = if (sp.contains("nextEventId")) sp.getInt("nextEventId", 100) else null
+        set(v) { if (v != null) sp.edit().putInt("nextEventId", v).apply() }
 
     /** Время события с учётом режима питания. */
     fun resolvedTimes(e: EventItem, slots: List<MealSlot> = mealSlots()): List<Int> =
@@ -70,6 +98,12 @@ class Store(ctx: Context) {
         val s = doneSet(date).toMutableSet(); if (done) s += key else s -= key
         sp.edit().putStringSet("done_$date", s).apply()
     }
+    /** Все отметки «сделано» по датам. */
+    var allDone: Map<String, Set<String>>
+        get() = sp.all.filterKeys { it.startsWith("done_") }.mapNotNull { (k, v) ->
+            @Suppress("UNCHECKED_CAST") (v as? Set<String>)?.let { k.removePrefix("done_") to it.toSet() } }.toMap()
+        set(m) { val e = sp.edit(); sp.all.keys.filter { it.startsWith("done_") }.forEach { e.remove(it) }
+            m.forEach { (d, s) -> e.putStringSet("done_$d", HashSet(s)) }; e.apply() }
 
     // ---------- Вес ----------
     var weights: List<WeightEntry>
@@ -85,6 +119,11 @@ class Store(ctx: Context) {
     // ---------- Вода ----------
     fun waterMl(date: String) = sp.getInt("water_$date", 0)
     fun addWater(date: String, ml: Int) { sp.edit().putInt("water_$date", maxOf(0, waterMl(date) + ml)).apply() }
+    /** Вода по датам (мл). */
+    var allWater: Map<String, Int>
+        get() = sp.all.filterKeys { it.startsWith("water_") }.mapNotNull { (k, v) -> (v as? Int)?.let { k.removePrefix("water_") to it } }.toMap()
+        set(m) { val e = sp.edit(); sp.all.keys.filter { it.startsWith("water_") }.forEach { e.remove(it) }
+            m.forEach { (d, ml) -> e.putInt("water_$d", ml) }; e.apply() }
 
     // ---------- Дневник питания ----------
     var diary: List<DiaryEntry>
@@ -101,6 +140,7 @@ class Store(ctx: Context) {
         get() = sp.getStringSet("fav", emptySet()) ?: emptySet()
         set(v) { sp.edit().putStringSet("fav", v).apply() }
     val recents: List<String> get() = sp.getString("recent", "")!!.split('|').filter { it.isNotBlank() }
+    fun setRecents(l: List<String>) { sp.edit().putString("recent", l.filter { it.isNotBlank() && '|' !in it }.distinct().take(30).joinToString("|")).apply() }
     private fun touchRecent(id: String) { sp.edit().putString("recent", (listOf(id) + recents.filter { it != id }).take(30).joinToString("|")).apply() }
 
     // ---------- Свои продукты и блюда ----------
@@ -115,6 +155,18 @@ class Store(ctx: Context) {
     var permissionsShown: Boolean
         get() = sp.getBoolean("permShown", false)
         set(v) { sp.edit().putBoolean("permShown", v).apply() }
+
+    // ---------- Варианты меню (отдельный файл "menu", ключи m<индекс приёма>) ----------
+    var menuVariants: Map<String, Int>
+        get() = menuSp?.all?.mapNotNull { (k, v) -> (v as? Int)?.let { k to it } }?.toMap() ?: emptyMap()
+        set(m) { val sp2 = menuSp ?: return; val e = sp2.edit(); sp2.all.keys.forEach { e.remove(it) }; m.forEach { (k, v) -> e.putInt(k, v) }; e.apply() }
+
+    /** Вызывается перед массовой записью (импорт): гарантирует, что счётчик id событий больше всех существующих id. */
+    fun ensureEventIdCounter() {
+        val maxId = events.maxOfOrNull { it.id } ?: return
+        val cur = sp.getInt("nextEventId", 100)
+        if (cur <= maxId) sp.edit().putInt("nextEventId", maxId + 1).apply()
+    }
 }
 
 /** Сериализация в JSON (отдельно — чтобы покрыть unit-тестами совместимость формата). */

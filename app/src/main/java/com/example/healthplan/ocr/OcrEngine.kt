@@ -9,11 +9,28 @@ import android.net.Uri
 import com.googlecode.tesseract.android.TessBaseAPI
 import java.io.File
 import kotlin.math.max
-import kotlin.math.min
+import kotlin.math.roundToInt
 
-/** Офлайн-OCR на Tesseract (tessdata_fast rus+eng из assets). */
+/**
+ * Офлайн-OCR на Tesseract (tessdata_fast rus+eng из assets).
+ *
+ * Почему так (см. RESEARCH.md §10): на снимках плотного текста этикетки режим PSM_AUTO (3) после глобального порога
+ * Оцу терял почти весь текст (оставались 3–4 нижние строки). Поэтому:
+ * - по умолчанию PSM 6 (единый блок текста) на полутоновом изображении, порог выбирает Tesseract;
+ * - несколько проходов (PSM 6 / Оцу, PSM 6 / Саувола, PSM 3 / авто), лучший выбирается по результату разбора;
+ * - масштаб подбирается по шагу строк (мелкий текст увеличивается), наклон выравнивается.
+ */
 object OcrEngine {
     private val LANGS = listOf("rus", "eng")
+
+    data class Pass(val name: String, val psm: Int, val thresholding: Int)
+    val PASSES = listOf(
+        Pass("блок, Оцу", TessBaseAPI.PageSegMode.PSM_SINGLE_BLOCK, 0),
+        Pass("блок, Саувола", TessBaseAPI.PageSegMode.PSM_SINGLE_BLOCK, 2),
+        Pass("авто", TessBaseAPI.PageSegMode.PSM_AUTO, 0),
+    )
+
+    data class Result(val text: String, val passName: String, val passesRun: Int, val scale: Double, val skewDeg: Double, val millis: Long)
 
     fun ensureTessdata(ctx: Context): File {
         val dir = File(ctx.filesDir, "tessdata").apply { mkdirs() }
@@ -21,24 +38,31 @@ object OcrEngine {
             val out = File(dir, "$l.traineddata")
             val size = ctx.assets.openFd("tessdata/$l.traineddata").use { it.length }
             if (!out.exists() || out.length() != size) {
-                ctx.assets.open("tessdata/$l.traineddata").use { i -> out.outputStream().use { o -> i.copyTo(o) } }
+                val tmp = File(dir, "$l.traineddata.tmp")
+                ctx.assets.open("tessdata/$l.traineddata").use { i -> tmp.outputStream().use { o -> i.copyTo(o) } }
+                tmp.renameTo(out)
             }
         }
         return ctx.filesDir
     }
 
-    /** Загрузка с уменьшением (≤ maxSide) и поворотом по EXIF. */
     /** null — если файл недоступен/не картинка/не хватает памяти (никогда не бросает исключений). */
-    fun load(ctx: Context, uri: Uri, maxSide: Int = 2400): Bitmap? = try { loadUnsafe(ctx, uri, maxSide) } catch (_: Exception) { null } catch (_: OutOfMemoryError) { null }
+    fun load(ctx: Context, uri: Uri, maxSide: Int = 3200): Bitmap? = try { loadUnsafe(ctx, uri, maxSide) } catch (_: Exception) { null } catch (_: OutOfMemoryError) { null }
 
+    /** Загрузка с поворотом по EXIF; длинная сторона не больше [maxSide] (без лишнего уменьшения в 2 раза). */
     private fun loadUnsafe(ctx: Context, uri: Uri, maxSide: Int): Bitmap? {
         val cr = ctx.contentResolver
         val o = BitmapFactory.Options().apply { inJustDecodeBounds = true }
         cr.openInputStream(uri)?.use { BitmapFactory.decodeStream(it, null, o) }
         if (o.outWidth <= 0) return null
         var sample = 1
-        while (max(o.outWidth, o.outHeight) / sample > maxSide) sample *= 2
-        val bmp = cr.openInputStream(uri)?.use { BitmapFactory.decodeStream(it, null, BitmapFactory.Options().apply { inSampleSize = sample }) } ?: return null
+        while (max(o.outWidth, o.outHeight) / (sample * 2) >= maxSide) sample *= 2
+        var bmp = cr.openInputStream(uri)?.use { BitmapFactory.decodeStream(it, null, BitmapFactory.Options().apply { inSampleSize = sample }) } ?: return null
+        val long = max(bmp.width, bmp.height)
+        if (long > maxSide) {
+            val k = maxSide.toDouble() / long
+            bmp = Bitmap.createScaledBitmap(bmp, (bmp.width * k).roundToInt(), (bmp.height * k).roundToInt(), true)
+        }
         val rot = try {
             cr.openInputStream(uri)?.use { ExifInterface(it).getAttributeInt(ExifInterface.TAG_ORIENTATION, ExifInterface.ORIENTATION_NORMAL) } ?: 1
         } catch (_: Exception) { 1 }
@@ -48,53 +72,50 @@ object OcrEngine {
 
     fun rotate(b: Bitmap, deg: Float): Bitmap = Bitmap.createBitmap(b, 0, 0, b.width, b.height, Matrix().apply { postRotate(deg) }, true)
 
-    /** Оттенки серого + растяжение контраста + порог Оцу; масштаб так, чтобы ширина текста была читаема (~1600–2400 px). */
-    fun preprocess(src: Bitmap): Bitmap {
-        val longSide = max(src.width, src.height)
-        val scale = when { longSide < 1400 -> 1600f / longSide; longSide > 2600 -> 2400f / longSide; else -> 1f }
-        val b = if (scale != 1f) Bitmap.createScaledBitmap(src, (src.width * scale).toInt(), (src.height * scale).toInt(), true) else src
-        val w = b.width; val h = b.height
-        val px = IntArray(w * h); b.getPixels(px, 0, w, 0, 0, w, h)
-        val gray = IntArray(px.size); val hist = IntArray(256)
-        for (i in px.indices) {
-            val c = px[i]; val g = ((c shr 16 and 0xff) * 299 + (c shr 8 and 0xff) * 587 + (c and 0xff) * 114) / 1000
-            gray[i] = g; hist[g]++
-        }
-        // растяжение контраста по 1% / 99% перцентилям
-        var lo = 0; var hi = 255; var acc = 0; val n = px.size
-        while (lo < 255 && acc + hist[lo] < n / 100) { acc += hist[lo]; lo++ }
-        acc = 0; while (hi > 0 && acc + hist[hi] < n / 100) { acc += hist[hi]; hi-- }
-        val range = max(1, hi - lo)
-        val hist2 = IntArray(256)
-        for (i in gray.indices) { val v = min(255, max(0, (gray[i] - lo) * 255 / range)); gray[i] = v; hist2[v]++ }
-        val t = otsu(hist2, n)
-        for (i in gray.indices) { val v = if (gray[i] > t) 255 else 0; px[i] = (0xff shl 24) or (v shl 16) or (v shl 8) or v }
-        return Bitmap.createBitmap(px, w, h, Bitmap.Config.ARGB_8888)
+    fun toGray(b: Bitmap): Gray {
+        val px = IntArray(b.width * b.height); b.getPixels(px, 0, b.width, 0, 0, b.width, b.height)
+        return ImagePrep.fromArgb(px, b.width, b.height)
     }
 
-    fun otsu(hist: IntArray, total: Int): Int {
-        var sum = 0.0; for (i in 0..255) sum += i * hist[i].toDouble()
-        var sumB = 0.0; var wB = 0; var best = 0.0; var th = 127
-        for (i in 0..255) {
-            wB += hist[i]; if (wB == 0) continue
-            val wF = total - wB; if (wF == 0) break
-            sumB += i * hist[i].toDouble()
-            val mB = sumB / wB; val mF = (sum - sumB) / wF
-            val between = wB.toDouble() * wF * (mB - mF) * (mB - mF)
-            if (between > best) { best = between; th = i }
-        }
-        return th
-    }
+    fun toBitmap(g: Gray): Bitmap = Bitmap.createBitmap(ImagePrep.toArgb(g), g.w, g.h, Bitmap.Config.ARGB_8888)
 
-    /** Распознавание (вызывать не в UI-потоке). */
-    fun recognize(ctx: Context, bmp: Bitmap, binarize: Boolean = true): String {
+    /**
+     * Распознавание (вызывать не в UI-потоке). Проходы идут по очереди, пока не найдены все четыре значения
+     * (ккал, Б, Ж, У); из выполненных выбирается лучший по [LabelParser.score]. Если лучшему не хватает значений,
+     * к тексту добавляется текст следующего по качеству прохода (парсер берёт недостающее оттуда).
+     */
+    fun recognize(ctx: Context, bmp: Bitmap, progress: (Int, Int) -> Unit = { _, _ -> }): Result {
+        val t0 = System.currentTimeMillis()
         val base = ensureTessdata(ctx)
+        val prep = ImagePrep.prepare(toGray(bmp))
+        val img = toBitmap(prep.gray)
         val api = TessBaseAPI()
         try {
-            if (!api.init(base.absolutePath, LANGS.joinToString("+"))) return ""
-            api.setPageSegMode(TessBaseAPI.PageSegMode.PSM_AUTO)
-            api.setImage(if (binarize) preprocess(bmp) else bmp)
-            return api.getUTF8Text() ?: ""
+            if (!api.init(base.absolutePath, LANGS.joinToString("+"))) return Result("", "", 0, prep.scale, prep.skewDeg, 0)
+            api.setVariable("user_defined_dpi", "300")
+            api.setVariable("preserve_interword_spaces", "1")
+            val results = mutableListOf<Pair<Pass, String>>()
+            for ((i, p) in PASSES.withIndex()) {
+                progress(i + 1, PASSES.size)
+                api.setPageSegMode(p.psm)
+                api.setVariable("thresholding_method", p.thresholding.toString())
+                api.setImage(img)
+                val t = (api.utF8Text ?: "").trim()
+                results += p to t
+                api.clear()
+                val parsed = LabelParser.parse(t)
+                if (parsed.foundDirect >= 4 && parsed.warnings.none { "запятая" in it || "25%" in it }) break
+            }
+            val ranked = results.sortedByDescending { LabelParser.score(it.second) }
+            val best = ranked.first()
+            var text = best.second
+            if (LabelParser.parse(text).foundDirect < 4 && ranked.size > 1) {
+                val extra = ranked[1].second
+                val combined = "$text\n\n— другой вариант распознавания —\n$extra"
+                if (LabelParser.parse(combined).foundDirect > LabelParser.parse(text).foundDirect ||
+                    LabelParser.score(combined) > LabelParser.score(text) + 1.0) text = combined
+            }
+            return Result(text, best.first.name, results.size, prep.scale, prep.skewDeg, System.currentTimeMillis() - t0)
         } finally { api.recycle() }
     }
 }

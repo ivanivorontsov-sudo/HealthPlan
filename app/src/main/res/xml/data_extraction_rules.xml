@@ -1,12 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Данные не уходят в облако; разрешён только прямой перенос на новый телефон (кабель/Wi-Fi Direct). -->
+<!-- Android 12+: пользовательские данные входят в резервную копию и перенос на новый телефон.
+     Модель OCR (files/tessdata, ~5 МБ, восстанавливается из APK) и служебные коды будильников исключены.
+     В облако — только при сквозном шифровании копии (включена блокировка экрана). -->
 <data-extraction-rules>
-    <cloud-backup>
-        <exclude domain="sharedpref" path="."/>
-        <exclude domain="file" path="."/>
-        <exclude domain="database" path="."/>
+    <cloud-backup disableIfNoEncryptionCapabilities="true">
+        <include domain="sharedpref" path="healthplan.xml"/>
+        <include domain="sharedpref" path="menu.xml"/>
+        <include domain="file" path="backups/"/>
     </cloud-backup>
     <device-transfer>
         <include domain="sharedpref" path="healthplan.xml"/>
+        <include domain="sharedpref" path="menu.xml"/>
+        <include domain="file" path="backups/"/>
     </device-transfer>
 </data-extraction-rules>

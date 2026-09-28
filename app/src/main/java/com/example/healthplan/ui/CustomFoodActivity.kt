@@ -23,6 +23,7 @@ class CustomFoodActivity : BaseActivity() {
     private var ingredients = mutableListOf<Ingredient>()
     private var source = "Свой продукт"
     private var rawOcr: String? = null
+    private var kcalCalculated = false
     private var ets: List<TextInputEditText> = emptyList()
     private var nameEt: TextInputEditText? = null; private var portionEt: TextInputEditText? = null; private var cookedEt: TextInputEditText? = null
 
@@ -44,6 +45,7 @@ class CustomFoodActivity : BaseActivity() {
             fun d(k: String) = if (intent.hasExtra(k)) Ui.g(Math.round(intent.getDoubleExtra(k, 0.0) * 10) / 10.0) else ""
             vals = arrayOf(d("kcal"), d("p"), d("f"), d("c"), d("fib"))
             if (intent.hasExtra("portion")) portion = d("portion")
+            kcalCalculated = intent.getBooleanExtra("kcalCalculated", false)
         }
         render()
     }
@@ -69,7 +71,9 @@ class CustomFoodActivity : BaseActivity() {
     private fun render(): Unit = screen {
         h1(if (store.customFoods.any { it.id == foodId }) "Изменить" else "Новый продукт / блюдо")
         nameEt = input("Название", name, number = false)
-        rawOcr?.let { raw -> card(stroke = Ui.YELLOW) { text("Распознано с фото — проверьте значения!", 16f, true); muted(raw.take(1200), 12f) } }
+        rawOcr?.let { raw -> card(stroke = Ui.YELLOW) { text("Распознано с фото — проверьте значения!", 16f, true)
+            if (kcalCalculated) muted("⚠ Калорийность на этикетке не найдена и рассчитана по БЖУ — сверьте с упаковкой.", 14f)
+            muted(raw.take(4000), 12f) } }
         card {
             text("Как задать состав", 18f, true)
             val g = RadioGroup(context)

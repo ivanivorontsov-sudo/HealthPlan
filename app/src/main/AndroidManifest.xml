@@ -18,7 +18,8 @@
 
     <application
         android:name=".App"
-        android:allowBackup="false"
+        android:allowBackup="true"
+        android:fullBackupContent="@xml/backup_rules"
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:icon="@mipmap/ic_launcher"
         android:roundIcon="@mipmap/ic_launcher_round"
@@ -37,6 +38,7 @@
         <activity android:name=".ui.ProfileActivity" android:label="Профиль" android:windowSoftInputMode="adjustResize" />
         <activity android:name=".ui.ParamsActivity" android:label="Мои параметры" />
         <activity android:name=".ui.SourcesActivity" android:label="Источники и оговорки" />
+        <activity android:name=".ui.DataActivity" android:label="Данные" />
         <activity android:name=".ui.PermissionsActivity" android:label="Разрешения" />
         <activity android:name=".ui.EventEditActivity" android:label="Событие" android:windowSoftInputMode="adjustResize" />
         <activity android:name=".ui.FoodPickerActivity" android:label="Выбор продукта" android:windowSoftInputMode="adjustResize" />

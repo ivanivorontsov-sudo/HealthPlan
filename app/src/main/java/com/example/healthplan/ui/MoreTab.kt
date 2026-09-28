@@ -14,6 +14,7 @@ class MoreTab(a: MainActivity) : Tab(a) {
         go("📊  Мои параметры и нормы", ParamsActivity::class.java)
         go("🥗  Мои блюда и продукты", MyFoodsActivity::class.java)
         go("📷  Распознать этикетку (фото)", OcrActivity::class.java)
+        go("💾  Данные: экспорт и импорт", DataActivity::class.java)
         go("🔐  Разрешения для звонков", PermissionsActivity::class.java)
         go("📚  Источники и оговорки", SourcesActivity::class.java)
         col.card {

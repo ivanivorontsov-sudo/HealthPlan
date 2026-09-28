@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Android 8–11 (Auto Backup): те же правила, что в data_extraction_rules.xml. -->
+<full-backup-content>
+    <include domain="sharedpref" path="healthplan.xml"/>
+    <include domain="sharedpref" path="menu.xml"/>
+    <include domain="file" path="backups/"/>
+</full-backup-content>

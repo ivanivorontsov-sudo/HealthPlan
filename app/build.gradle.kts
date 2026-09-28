@@ -11,8 +11,8 @@ android {
         applicationId = "com.example.healthplan"
         minSdk = 26
         targetSdk = 34
-        versionCode = 1
-        versionName = "1.0.0"
+        versionCode = 2
+        versionName = "1.0.1"
         ndk {
             // x86_64 — только для эмулятора; x86 (32-бит) исключён ради размера APK
             abiFilters += listOf("arm64-v8a", "armeabi-v7a", "x86_64")
