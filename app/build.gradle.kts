@@ -21,7 +21,7 @@ android {
 
     signingConfigs {
         create("box") {
-            storeFile = file("/home/box/.android/debug.keystore")
+            storeFile = file(System.getProperty("user.home") + "/.android/debug.keystore")
             storePassword = "android"
             keyAlias = "androiddebugkey"
             keyPassword = "android"
