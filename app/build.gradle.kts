@@ -66,7 +66,7 @@ dependencies {
     implementation("androidx.appcompat:appcompat:1.6.1")
     implementation("androidx.activity:activity-ktx:1.8.2")
     implementation("com.google.android.material:material:1.11.0")
-    implementation("com.github.adaptech-cz.Tesseract4Android:tesseract4android:4.9.0")
+    implementation("com.github.adaptech-cz.Tesseract4Android:tesseract4android:4.8.0")
 
     testImplementation("junit:junit:4.13.2")
     testImplementation("org.json:json:20231013")
